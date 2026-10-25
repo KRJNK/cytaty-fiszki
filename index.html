@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cytaty — fiszki do nauki</title>
+<meta name="description" content="Naucz się 10 słynnych cytatów: przeczytaj, zgadnij autora, sprawdź. Postęp zapisany lokalnie.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💬</text></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <!-- TODO: link do portfolio, gdy powstanie -->
+  <h1>Cytaty — fiszki</h1>
+  <p>Zgadnij autora, potem sprawdź. 10 cytatów.</p>
+  <section class="card">
+    <div class="progress"><div id="bar" style="width:0%"></div></div>
+    <p class="hint" id="prog"></p>
+    <div id="quote" class="big" style="font-size:1.2rem"></div>
+    <p id="author" class="hint"></p>
+    <button id="show" type="button">Pokaż autora</button>
+    <span id="grade" hidden>
+      <button id="know" type="button">Zgadłem ✓</button>
+      <button id="dont" type="button">Nie zgadłem ✗</button>
+    </span>
+  </section>
+  <div id="ads-slot" hidden></div>
+  <footer><a href="privacy.html">Prywatność</a> · <a href="kontakt.html">Kontakt</a></footer>
+</main>
+<script src="app.js"></script>
+<script src="ads.js"></script>
+</body>
+</html>
